@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Login Page</h1>
+<header class="top-bar">
+    <h1>SpeedRunsHub</h1>
+    <div class="nav-buttons">
+        <button class="index-btn" onclick="location.href='hub_page.html'">Go to Hub</button>
+    </div>
 </header>
+
+<section class="background-image">
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <button type="submit" onclick="return false;">Login</button>
+        </form>
+    </div>
+</section>
 </body>
 </html>
